@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 import google.generativeai as palm
 import os
 
-api="AIzaSyC2EAOvZv6N_fD2T-Z_79LykQ7_lX618do"
+api="MAKERSUITE_API_TOKEN"
 palm.configure(api_key=api)
 #model = palm.GenerativeModel('gemini-1.5-flash')
 model = "models/text-bison-001"
