@@ -7,7 +7,6 @@ import os
 
 api="MAKERSUITE_API_TOKEN"
 palm.configure(api_key=api)
-#model = palm.GenerativeModel('gemini-1.5-flash')
 model = "models/text-bison-001"
 
 app=Flask(__name__)
