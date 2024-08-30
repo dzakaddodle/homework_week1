@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 import google.generativeai as palm
 import os
 
-api="MAKERSUITE_API_TOKEN"
+api=os.getenv("MAKERSUITE_API_TOKEN")
 palm.configure(api_key=api)
 model = "models/text-bison-001"
 
